@@ -7,15 +7,21 @@ import sys
 
 DEBUG = False
 
-COLOR_SETTING = 75
-
+COLOR_SETTING = 75              # Controls color saturation. Raise for more monochromatic,
+                                # lower for more colors.
+# Image Ratio
 WIDTH = 1920
 HEIGHT = 1080
+# Image Scale
 SIZE_FACTOR = 1
-X_SHIFT = 0
-Y_SHIFT = 0
-ZOOM_FACTOR = 500
-ITERATIONS = 1000
+# Linear shift of the image
+X_SHIFT = 0                     # Raise to shift image to the right
+Y_SHIFT = 0                     # Raise to shift image downwards
+# Controls scale of the fractal
+ZOOM_FACTOR = 500               # Increase to zoom in
+# Controls generation of fine structures
+ITERATIONS = 1000               # Increase for more precise fractal
+                                # generation. Will slow down process.
 name = sys.argv[1]
 
 def rgb_conv(i):
