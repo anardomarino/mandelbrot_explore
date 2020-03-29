@@ -20,6 +20,10 @@ If Python is installed somewhere other than the /bin/ folder, you may also run t
 [python] mandelbrot.py [FILE_NAME] 
 ```
 Where FILE\_NAME is the name of the image to be generated (omit the .jpg, as that is added automatically).
+```bash
+[python] julia.py [FILE_NAME] [a+bj] [DEGREE]
+```
+Use the above bash command to create julia sets, where FILE\_NAME is the name of the image to be generate, \[a+bj] (note: no white space and j, not i) is the constant c in f(z) = z^n + c in the generation, and DEGREE is n, the degree to which the imaginary coordinate is raised to.
 
 ## DEBUG
 When set to `True`, crosshairs will appear on the developed image, allowing the user to fine tune the X\_SHIFT and Y\_SHIFT parameters to control where the next fractal zoom will be cenetered.
